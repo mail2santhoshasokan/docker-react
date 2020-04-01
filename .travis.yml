@@ -1,0 +1,10 @@
+sudo: required
+services:
+    -docker
+
+before_install:
+    - docker build -t mail2santhoshasokan/docker-react -f DockerFile.dev .
+
+
+script:
+    - docker run -e CI=true mail2santhoshasokan/docker-react npm run test -- --coverage
