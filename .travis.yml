@@ -3,7 +3,7 @@ services:
     -docker
 
 before_install:
-    - docker build -t mail2santhoshasokan/docker-react -f Dockerfile.dev .
+    - docker build -t mail2santhoshasokan/docker-react -f DockerFile.dev .
 
 
 script:
