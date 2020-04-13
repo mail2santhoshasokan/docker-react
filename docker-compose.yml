@@ -3,18 +3,18 @@ services:
     webapp:
         build:
             context: .
-            dockerfile: DockerFile.dev
+            dockerfile: Dockerfile.dev
         ports: 
             - 3000:3000
         volumes: 
-            - /app/node-modules
+            - /app/node_modules
             - .:/app
     test:
         build:
             context: .
-            dockerfile: DockerFile.dev
+            dockerfile: Dockerfile.dev
         volumes: 
-            - /app/node-modules
+            - /app/node_modules
             - .:/app
         command: ["npm" , "run" , "test"]
 
