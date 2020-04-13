@@ -13,10 +13,10 @@ deploy:
     edge: true
     provider: elasticbeanstalk
     region: "us-east-2"
-    app: "dockerweb"
-    env: "Dockerweb-env"
+    app: "webapp"
+    env: "Webapp-env"
     bucket_name: "elasticbeanstalk-us-east-2-841806388742"
-    bucket_path: "dockerweb"
+    bucket_path: "webapp"
     on:
         branch: master
     access_key_id: $ACCESS_KEY
