@@ -13,10 +13,10 @@ deploy:
     edge: true
     provider: elasticbeanstalk
     region: "us-east-2"
-    app: "webapp"
-    env: "Webapp-env"
+    app: "web-app"
+    env: "WebApp-env"
     bucket_name: "elasticbeanstalk-us-east-2-841806388742"
-    bucket_path: "webapp"
+    bucket_path: "web-app"
     on:
         branch: master
     access_key_id: $ACCESS_KEY
