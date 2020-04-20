@@ -7,7 +7,7 @@ before_install:
 
 
 script:
-    - docker run mail2santhoshasokan/docker-react npm run test -- --coverage
+    - docker run -e CI=true mail2santhoshasokan/docker-react npm run test -- --coverage
 
 deploy:
     provider: elasticbeanstalk
